@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buku Tamu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">About Me</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="artikel.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="buku_tamu.html">Buku Tamu</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- FORM -->
+  <div class="container mt-5">
+    <div class="card shadow-lg">
+      <div class="card-header bg-primary text-white">
+        <h4 class="mb-0">Form Buku Tamu</h4>
+      </div>
+      <div class="card-body">
+        <!-- isi form dari Buku_Tamu.html -->
+          <div class="card shadow-lg">
+    </div>
+    <div class="card-body">
+      <form>
+        <!-- Nama Lengkap -->
+        <div class="mb-3">
+          <label class="form-label">Nama Lengkap</label>
+          <input type="text" class="form-control" name="nama_lengkap" placeholder="Masukkan nama lengkap">
+        </div>
+
+        <!-- Jenis Kelamin -->
+        <div class="mb-3">
+          <label class="form-label">Jenis Kelamin</label><br>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="jenis_kelamin" value="L" id="laki">
+            <label class="form-check-label" for="laki">Laki-laki</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="jenis_kelamin" value="P" id="perempuan">
+            <label class="form-check-label" for="perempuan">Perempuan</label>
+          </div>
+        </div>
+
+        <!-- Alamat Tinggal -->
+        <div class="mb-3">
+          <label class="form-label">Alamat Tinggal</label>
+          <input type="text" class="form-control" name="alamat_tinggal" placeholder="Masukkan alamat">
+        </div>
+
+        <!-- Email -->
+        <div class="mb-3">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-control" name="email" placeholder="Masukkan email">
+        </div>
+
+        <!-- Sosial Media -->
+        <div class="mb-3">
+          <label class="form-label">Aktif pada sosial media:</label><br>
+          <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" name="facebook" id="facebook">
+            <label class="form-check-label" for="facebook">Facebook</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" name="twitter" id="twitter">
+            <label class="form-check-label" for="twitter">Twitter</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" name="instagram" id="instagram">
+            <label class="form-check-label" for="instagram">Instagram</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" name="path" id="path">
+            <label class="form-check-label" for="path">LinkIn</label>
+          </div>
+        </div>
+
+        <!-- Mengetahui Web -->
+        <div class="mb-3">
+          <label class="form-label">Mengetahui web ini dari:</label>
+          <select class="form-select" name="mengetahui">
+            <option selected>Pilih</option>
+            <option value="web">Web</option>
+            <option value="iklan">Surat Kabar</option>
+            <option value="teman">Teman/Kerabat</option>
+            <option value="lainnya">Browsing Internet</option>
+          </select>
+        </div>
+
+        <!-- Pesan -->
+        <div class="mb-3">
+          <label class="form-label">Pesan</label>
+          <textarea class="form-control" name="komentar" rows="4" placeholder="Tulis pesan Anda..."></textarea>
+        </div>
+
+        <!-- Tombol -->
+        <div class="text-end">
+          <button type="submit" class="btn btn-primary">Kirim</button>
+          <button type="reset" class="btn btn-secondary">Reset</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
